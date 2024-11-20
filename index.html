@@ -1,105 +1,148 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мой Улучшенный Сайт</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Добро пожаловать на наш удивительный сайт. Здесь вы найдете много интересного и полезного контента.">
+    <title>Мой Ультра Улучшенный Сайт</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-      }
-
-      header {
-        
-        background: #3c4458;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
-
-      nav {
-        margin: 10px 0;
-        display: flex;
-        justify-content: center;
-      }
-
-      nav a {
-        margin: 0 15px;
-        text-decoration: none;
-        color: #fff;
-        background: #444;
-        padding: 10px 15px;
-        border-radius: 5px;
-      }
-
-      main {
-        padding: 400px;
-        background-color: rgb(0, 65, 48);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-       
-      }
-
-      footer {
-        text-align: center;
-        padding: 10px 0;
-        background: #333;
-        color: #fff;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-      }
-      .img {
-        width: 70px;
-        height: 60px;
-        margin-left: 10px;
-        margin-top: 10px;
-      }
-      .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .search{
-        width: 500px;
-        height: 30px;
-        margin-top: 20px;
-        background-color: gray;
-    }
-    .name {
-        margin-left: -500px;
-    }
-    
-    
-    
+        /* Стили для улучшенного дизайна */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #3c4458;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        main {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        .content {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .service-section, .faq-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .service {
+            display: inline-block;
+            width: 30%;
+            margin: 15px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            padding: 16px;
+        }
+        .gallery img {
+            width: 200px;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
     </style>
-  </head>
-  <body>
-      <header class="header">
-          <input type="text" class="search" placeholder="Поиск...">
-          <div id="results" class="search-results"></div>
-          <h1 class="name">Добро пожаловать на мой сайт!</h1>
-          <div></div>
-          <img class="img" src="/Снимок экрана от 2024-11-18 12-33-15.png">
+</head>
+<body>
+    <header>
+        <h1>OVI</h1>
     </header>
     <nav>
-        <a href="#">Главная</a>
-        <a href="#">О нас</a>
-        <a href="">Контакты</a>
+        <a href="#home">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Контакты</a>
     </nav>
-    <main class="main">
-      <nav class="nav">
-        <a href="">TEAMS</a>
-      </nav>
+
+    <main>
+        <div class="content">
+            <h2>Добро Пожаловать!</h2>
+            <p>Здесь вы найдете много интересного и полезного контента.</p>
+        </div>
+
+        <div id="services" class="service-section">
+            <h2>Наши Услуги</h2>
+            <div class="service">
+                <h3>Услуга 1</h3>
+                <p>Описание услуги 1.</p>
+            </div>
+            <div class="service">
+                <h3>Услуга 2</h3>
+                <p>Описание услуги 2.</p>
+            </div>
+            <div class="service">
+                <h3>Услуга 3</h3>
+                <p>Описание услуги 3.</p>
+            </div>
+        </div>
+
+        <div id="gallery" class="gallery">
+            <h2>Галерея</h2>
+            <img src="image1.jpg" alt="Изображение 1">
+            <img src="image2.jpg" alt="Изображение 2">
+            <img src="image3.jpg" alt="Изображение 3">
+        </div>
+
+        <div id="faq" class="faq-section">
+            <h2>Часто Задаваемые Вопросы</h2>
+            <p>Вопрос 1: Ответ на вопрос 1.</p>
+            <p>Вопрос 2: Ответ на вопрос 2.</p>
+            <p>Вопрос 3: Ответ на вопрос 3.</p>
+        </div>
         
+        <footer>
+            <p>&copy; 2024 Мой Ультра Улучшенный Сайт</p>
+            <p><a href="#privacy">Политика конфиденциальности</a> | <a href="#terms">Условия использования</a></p>
+        </footer>
     </main>
-    <footer>
-      <p>&copy; 2024 Мой Улучшенный Сайт</p>
-    </footer>
+
     <script>
-      console.log('Сайт загружен!');
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Сайт загружен!');
+        });
     </script>
-  </body>
+</body>
 </html>
