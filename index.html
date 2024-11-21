@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Добро пожаловать на наш удивительный сайт. Здесь вы найдете много интересного и полезного контента.">
-    <title>OVI</title>
+    <title>Ovi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <style>
@@ -191,6 +191,7 @@
     transform: scale(1.05); /* Увеличение при наведении */
 }
 .contact-button {
+    margin-left: 350px;
     background-color: #FFCC00;
     color: black;
     border: none;
@@ -217,6 +218,15 @@
 .social-icon:hover {
     color: #FFCC00; /* Цвет иконки при наведении */
 }
+.search {
+    margin-left: 550px;
+    width: 500px;
+    height: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-style: italic ;
+    text-transform: uppercase;
+
+}
     </style>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -225,14 +235,10 @@
     <div class="logo">
       <img src="logo.png" alt="Логотип компании" />
   </div>
-  <nav class="nav-menu">
-      <ul>
-          <li><a href="#home">Главная</a></li>
-          <li><a href="#services">Наши Услуги</a></li>
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#contact">Контакты</a></li>
-      </ul>
-  </nav>
+ <input class="search" type="text" placeholder="Search...">
+ <button class="search-button" aria-label="Начать поиск">
+    <i class="fas fa-search"></i>
+</button>
   <button class="contact-button">Связаться с нами</button>
   <div class="social-icons">
       <a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -243,8 +249,8 @@
 </header>
     <nav>
         <a href="#home">Главная</a>
-        <a href="#services">Услуги</a>
-        <a href="#gallery">Галерея</a>
+        <a href="#courses">Курсы</a>
+        <a href="#gallery">Movies</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Контакты</a>
     </nav>
@@ -255,7 +261,7 @@
         </div>
 
         <div id="services" class="service-section">
-          <h2 style="text-align: center; margin-bottom: 30px;">Наши Услуги</h2>
+          <h2 style="text-align: center; margin-bottom: 30px;">Курсы</h2>
           <div class="service" style="animation-delay: 0.2s;">
               <i class="fas fa-code fa-3x" style="color: #4a90e2;"></i>
               <h3>Frontend</h3>
